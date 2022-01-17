@@ -27,7 +27,7 @@ public class Dumpling : MonoBehaviour
         if (!Dead)
         {
             _player_transform.position += Vector3.right * speed * Time.deltaTime;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.anyKeyDown)
             {
                 rb.AddForce(Vector2.up * jump);
             }
